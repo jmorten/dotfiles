@@ -38,11 +38,11 @@ ln -s "$HOME/.dotfiles/path.zsh" $ZSH_CUSTOM/path.zsh
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
-brew bundle --file ./Brewfile
+# brew tap homebrew/bundle
+# brew bundle --file ./Brewfile
 
 # thefuck
-echo 'eval "$(thefuck --alias)"' >> $HOME/.zprofile
+# echo 'eval "$(thefuck --alias)"' >> $HOME/.zprofile
 
 # Set default MySQL root password and auth type
 # mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
